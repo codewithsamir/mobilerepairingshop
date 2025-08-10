@@ -24,17 +24,17 @@ export default function FaqSection() {
               <div>
                 <h4 className="font-bold text-white">{item.title}</h4>
                 <p className="text-gray-400 text-sm mt-1">{item.description}</p>
-              </div>
+              </div>construction-5-buid
             </div>
           ))}
         </div>
 
         {/* RIGHT COLUMN */}
         <div>
-          <div className="bg-white text-black rounded-md border-t-4 border-blue-500 p-4">
+          <div className="bg-white text-black rounded-md border-t-4 border-blue-500 p-8">
             <Accordion type="single" collapsible>
               {faqQuestions.map((faq, idx) => (
-                <AccordionItem key={idx} value={`item-${idx + 1}`}>
+                <AccordionItem key={idx} value={`item-${idx + 1}`} className="p-4">
                   <AccordionTrigger className="font-bold">{faq.question}</AccordionTrigger>
                   <AccordionContent>{faq.answer}</AccordionContent>
                 </AccordionItem>

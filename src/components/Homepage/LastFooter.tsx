@@ -5,7 +5,7 @@ export default function LastFooter() {
     <footer
       className=" text-white relative"
       style={{
-        backgroundImage: "url('/your-image.png')",
+        backgroundImage: "url('/assets/construction-5-buid.png')",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "bottom",
         backgroundSize: "cover",
@@ -69,7 +69,7 @@ export default function LastFooter() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-8 border-b border-gray-700">
           {/* Left */}
           <div>
-            <div className="font-bold text-lg">ITECHS</div>
+            <div className="font-bold text-lg">ICoud Repairing</div>
             <ul className="mt-4 space-y-1 text-sm">
               <li>San Francisco, California</li>
               <li>San Bruno, California</li>
