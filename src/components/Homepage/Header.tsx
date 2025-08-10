@@ -1,4 +1,5 @@
 import { Smartphone } from 'lucide-react'
+import Image from 'next/image';
 import React from 'react'
 
 const Header = () => {
@@ -10,12 +11,10 @@ const Header = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-                <Smartphone className="w-7 h-7 text-white" />
-              </div>
+           
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">ITECHS</h1>
-                <p className="text-xs text-gray-600">Phone Repair Delivered</p>
+              <Image src="/assets/logo.png" alt="logo" width={200 } height={100}/>
+                
               </div>
             </div>
 

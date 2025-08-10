@@ -69,7 +69,7 @@ const Herosection: React.FC = () => {
           {/* Left Side - Brand Info */}
           <div className="text-center lg:text-left">
             <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
-              ITECHS® Mobile • San Francisco, Ca
+              ICloud Wiress Mobile • San Francisco, Ca
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed mb-8 max-w-2xl">
               SF'S FASTEST, MOST CONVENIENT PHONE REPAIR, REDEFINED BY OUR REVOLUTIONARY MOBILE 
