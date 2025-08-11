@@ -1,62 +1,11 @@
-"use client"
-import React, { useState } from 'react';
-import { Smartphone, Tablet, Watch, ChevronDown } from 'lucide-react';
-import Buttombar from './Buttombar';
-import Header from './Header';
+
+import React from 'react';
+
 import CategorySelector from './Categorydevice';
+import { devices } from '@/lib/data';
 
 
 const Herosection: React.FC = () => {
-  const [selectedDevice, setSelectedDevice] = useState('');
-
-
-
-
-
-   const devices: CategoryItem[] = [
-  {
-    id: "iphone",
-    name: "Apple iPhone",
-    icon: <Smartphone className="w-6 h-6 text-gray-600" />,
-    subcategories: [
-      {
-        id: "iphone8-series",
-        name: "iPhone 8 Series",
-        subcategories: [
-          { id: "iphone8", name: "iPhone 8" },
-          { id: "iphone8plus", name: "iPhone 8 Plus" },
-        ],
-      },
-      {
-        id: "iphone9-series",
-        name: "iPhone 9 Series",
-        subcategories: [
-          { id: "iphone9", name: "iPhone 9" },
-          { id: "iphone9plus", name: "iPhone 9 Plus" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "ipad",
-    name: "Apple iPad",
-    icon: <Tablet className="w-6 h-6 text-gray-600" />,
-    subcategories: [
-      { id: "ipad-air", name: "iPad Air" },
-      { id: "ipad-pro", name: "iPad Pro" },
-    ],
-  },
-  {
-    id: "watch",
-    name: "Apple Watch",
-    icon: <Watch className="w-6 h-6 text-gray-600" />,
-    subcategories: [
-      { id: "series6", name: "Series 6" },
-      { id: "series7", name: "Series 7" },
-    ],
-  },
-];
-
 
 
   return (
@@ -68,13 +17,15 @@ const Herosection: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Side - Brand Info */}
           <div className="text-center lg:text-left">
-            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
-              ICloud Wiress Mobile • San Francisco, Ca
-            </h2>
-            <p className="text-gray-600 text-sm leading-relaxed mb-8 max-w-2xl">
-              SF'S FASTEST, MOST CONVENIENT PHONE REPAIR, REDEFINED BY OUR REVOLUTIONARY MOBILE 
-              SERVICE. SERVING SAN FRANCISCO, SAN BRUNO, SAN MATEO, SAN JOSE
-            </p>
+          <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">
+  iCloud Wireless Mobile
+</h2>
+<p className="text-sm text-gray-700 font-medium mb-4">
+  9658 Plano Rd, Suite 100, Dallas, TX 75238
+</p>
+<p className="text-gray-600 text-sm leading-relaxed mb-6 max-w-2xl">
+  Dallas' fastest, most convenient phone repair service — redefined by our revolutionary mobile solution. Proudly serving Dallas, Plano, Richardson, and surrounding areas.
+</p>
 
             {/* Large Logo */}
             {/* <div className="flex justify-center lg:justify-start mb-12">

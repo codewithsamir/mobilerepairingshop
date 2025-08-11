@@ -1,7 +1,7 @@
-import { Smartphone } from 'lucide-react'
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
+import { imageData } from '@/lib/imagedata';
 
 const Header = () => {
       const navItems = [
@@ -20,7 +20,7 @@ const Header = () => {
             <div className="flex items-center space-x-3">
            
               <div>
-              <Image src="/assets/logo.png" alt="logo" width={200 } height={100}/>
+              <Image src={imageData.logo} alt="logo" width={200 } height={100}/>
                 
               </div>
             </div>

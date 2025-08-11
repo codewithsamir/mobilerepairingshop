@@ -9,21 +9,16 @@ const ContactInfoCards: React.FC = () => {
       title: "Contact Us",
       content: (
         <>
-          <p className="font-semibold">ITECHS® San Francisco</p>
+          <p className="font-semibold">iCloud Wireless Dallas</p>
           <p className="text-gray-600 mt-2">
-            In the San Francisco Bay area ITECHS services San Francisco, Daly City,
-            South San Francisco, San Bruno, Brisbane, Colma, Pacifica, Millbrae,
-            Burlingame, San Mateo.
-          </p>
-          <p className="text-gray-600 mt-4">
-            Mission District, SOMA (South of Market), The Castro, Nob Hill,
-            Chinatown, North Beach, Haight-Ashbury, Marina District, Noe Valley,
-            Outer Sunset.
+            Serving Dallas and nearby areas including Plano, Richardson, Irving, 
+            Garland, Mesquite, and Carrollton.
           </p>
           <p className="mt-4 font-medium">Phone Numbers</p>
-          <p className="text-gray-600">(415) 483-9625</p>
+          <p className="text-gray-600">(214) 436-7998</p>
+          <p className="text-gray-600">(469) 544-7447</p>
           <p className="mt-4 font-medium">Support Email</p>
-          <p className="text-blue-600">help@itechs.repair</p>
+          <p className="text-blue-600">itech@icloudwireless.com</p>
         </>
       ),
       buttonLabel: "Speak with a Tech",
@@ -31,41 +26,26 @@ const ContactInfoCards: React.FC = () => {
       buttonBg: "bg-white",
     },
     {
-      title: "ITECHS® California Locations",
+      title: "Our Service Areas",
       content: (
         <>
-          <p className="font-semibold">ITECHS® Santa Clara County</p>
+          <p className="font-semibold">Primary Service Locations</p>
           <p className="text-gray-600 mt-2">
-            In Santa Clara County, ITECHS services San Jose, Sunnyvale, Mountain View,
-            Palo Alto, Milpitas, Cupertino, Gilroy, Campbell, Los Gatos, Morgan Hill,
-            and Los Altos.
-          </p>
-          <hr className="my-4" />
-          <p className="font-semibold">ITECHS® Sacramento</p>
-          <p className="text-gray-600 mt-2">
-            Sac, Elk Grove, Citrus Heights, Folsom, Rancho Cordova, Galt, North
-            Highlands, Roseville, Natomas, Orangevale, Antelope, Rio Linda, West
-            Sacramento, Midtown, Pocket-Greenhaven, Arden-Arcade.
-          </p>
-          <hr className="my-4" />
-          <p className="font-semibold">ITECHS® Orange County</p>
-          <p className="text-gray-600 mt-2">
-            Anaheim, Santa Ana, Costa Mesa, Fountain Valley, Fullerton, Garden Grove,
-            Huntington Beach, Irvine, La Habra, Lake Forest, Los Alamitos, Mission
-            Viejo, Newport Beach, Orange, Placentia.
+            Dallas, Plano, Richardson, Irving, Garland, Mesquite, Carrollton, 
+            and surrounding communities in Texas.
           </p>
         </>
       ),
-      buttonLabel: "Our Communities",
+      buttonLabel: "View Service Areas",
       buttonIcon: <Home className="w-5 h-5" />,
       buttonBg: "bg-blue-50",
     },
     {
-      title: "ITECHS Live Chat",
+      title: "Live Chat Support",
       content: (
         <div className="flex flex-col items-center justify-center flex-1 text-center">
           <p className="text-4xl font-bold text-gray-900">
-            We are online, let’s talk!
+            We're online, ready to help!
           </p>
           <div className="mt-8">
             <svg
@@ -90,6 +70,7 @@ const ContactInfoCards: React.FC = () => {
       buttonBg: "bg-blue-50",
     },
   ];
+  
 
   return (
     <section className="py-16 md:mt-10">

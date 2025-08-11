@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { JSX, useState } from "react";
 import { Calendar, CheckCircle } from "lucide-react";
 
 interface TabContent {
@@ -19,11 +19,10 @@ const StepByStepGuide: React.FC = () => {
         <div className="space-y-6">
           <div>
             <h3 className="font-semibold text-gray-800 underline mb-2">
-              We Arrive for the appointment
+              We Arrive for Your Appointment
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              Upon arrival, the technician will find the closest available parking to your front door.
-              From here we just need your device start the repair. How it works.
+              Our technician will arrive at your location in Dallas or nearby areas on time, finding the closest safe parking to your address. Once there, we just need your device to begin the repair.
             </p>
           </div>
           <div>
@@ -31,17 +30,15 @@ const StepByStepGuide: React.FC = () => {
               Address Details
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              Please be sure to provide any necessary information needed for the technician to find
-              your location. Gate codes, Apartment numbers, building numbers, and designated parking
-              slots can be provided in the address section of the booking form.
+              Please provide clear location details such as gate codes, apartment or suite numbers, building numbers, and any parking instructions when booking your repair.
             </p>
           </div>
           <div>
             <h3 className="font-semibold text-gray-800 underline mb-2">
-              How you can prep your device
+              Preparing Your Device
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              Please have the device with at least a 15% charge on it to endure a timely repair.
+              Make sure your device has at least a 15% battery charge before the appointment to ensure a smooth, uninterrupted repair.
             </p>
           </div>
         </div>
@@ -53,21 +50,20 @@ const StepByStepGuide: React.FC = () => {
       content: (
         <div className="space-y-4">
           <p className="text-gray-600 leading-relaxed">
-            Our certified technicians arrive on time with all necessary tools and parts.
-            You can expect professional service with transparent communication throughout the repair process.
+            Our certified technicians arrive with all the tools and high-quality parts needed for your repair. We work quickly while keeping you informed every step of the way.
           </p>
           <ul className="space-y-2 text-gray-600">
             <li className="flex items-start space-x-2">
               <CheckCircle className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-              <span>Professional diagnosis of your device</span>
+              <span>Thorough diagnostic check of your device</span>
             </li>
             <li className="flex items-start space-x-2">
               <CheckCircle className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-              <span>High-quality replacement parts when needed</span>
+              <span>Genuine replacement parts where required</span>
             </li>
             <li className="flex items-start space-x-2">
               <CheckCircle className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-              <span>Complete repair testing before completion</span>
+              <span>Full testing before you receive your device back</span>
             </li>
           </ul>
         </div>
@@ -79,13 +75,12 @@ const StepByStepGuide: React.FC = () => {
       content: (
         <div className="space-y-4">
           <p className="text-gray-600 leading-relaxed">
-            We stand behind our work with comprehensive warranties and satisfaction guarantees.
+            We’re committed to quality service and your satisfaction on every repair.
           </p>
           <div className="bg-blue-50 p-4 rounded-lg">
-            <h4 className="font-semibold text-blue-800 mb-2">90-Day Warranty</h4>
+            <h4 className="font-semibold text-blue-800 mb-2">30-Day Warranty</h4>
             <p className="text-blue-700 text-sm">
-              All repairs come with a 90-day warranty on parts and labor. If anything goes wrong,
-              we'll fix it at no additional cost.
+              All repairs are backed by a 30-day warranty on parts and labor. If an issue occurs within this period, we’ll fix it at no extra cost.
             </p>
           </div>
         </div>
@@ -97,26 +92,27 @@ const StepByStepGuide: React.FC = () => {
       content: (
         <div className="space-y-4">
           <p className="text-gray-600 leading-relaxed">
-            Your data security and privacy are our top priorities throughout the repair process.
+            Your privacy and data protection are important to us at every step of the repair process.
           </p>
           <ul className="space-y-2 text-gray-600">
             <li className="flex items-start space-x-2">
               <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-              <span>No data access during repairs</span>
+              <span>No access to your personal data during repairs</span>
             </li>
             <li className="flex items-start space-x-2">
               <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-              <span>Secure handling of all devices</span>
+              <span>Secure handling of devices at all times</span>
             </li>
             <li className="flex items-start space-x-2">
               <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-              <span>Complete data protection guarantee</span>
+              <span>Commitment to full confidentiality</span>
             </li>
           </ul>
         </div>
       ),
     },
   ];
+  
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-16 ">

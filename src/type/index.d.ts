@@ -1,7 +1,7 @@
 interface CategoryItem {
   id: string;
   name: string;
-  icon?: React.ReactNode;
+  image?: StaticImageData | string;
   subcategories?: CategoryItem[];
 }
 
@@ -19,4 +19,13 @@ interface CardData {
   buttonLabel: string;
   buttonIcon?: React.ReactNode;
   buttonBg?: string;
+}
+
+interface TabData {
+  id: string;
+  label: string;
+  title: string;
+  content: string;
+  features?: string[];
+  buttonText?: string;
 }

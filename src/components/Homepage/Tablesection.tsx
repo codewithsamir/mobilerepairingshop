@@ -3,49 +3,42 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Play } from 'lucide-react';
 
-interface TabData {
-  id: string;
-  label: string;
-  title: string;
-  content: string;
-  features?: string[];
-  buttonText?: string;
-}
+
 
 const tabsData: TabData[] = [
   {
     id: 'how-it-works',
     label: 'HOW IT WORKS',
-    title: 'Comprehensive Repair Services:',
-    content: 'iTECHS® Mobile – The Fastest, Most Convenient Phone Repair Service Redefined by Our Revolutionary Mobile Service, Delivered Curbside to you, at your Beck and Call.',
+    title: 'Comprehensive Mobile Repair Services:',
+    content: 'iCloud Wireless – Fast, reliable phone and tablet repairs delivered conveniently to your doorstep in Dallas and surrounding areas.',
     features: [
-      'We offer a wide range of repair services, including screen repair, battery replacement, charger port repair, back glass repair, and diagnostic services for popular brands like Apple, Samsung, Motorola, Google, and OnePlus devices.'
+      'Wide range of repairs including screen replacement, battery swap, charging port repair, back glass replacement, and diagnostic services for Apple, Samsung, Google, and other popular devices.'
     ],
     buttonText: 'Learn More'
   },
   {
     id: 'what-to-expect',
     label: 'WHAT TO EXPECT',
-    title: 'Professional Service Excellence:',
-    content: 'Experience unmatched quality and convenience with our certified technicians who bring the repair shop directly to your location.',
+    title: 'Professional & Convenient Service:',
+    content: 'Certified technicians arrive equipped with all necessary tools and parts, providing transparent and friendly service at your location.',
     features: [
-      'Same-day service appointments available',
-      'Certified technicians with years of experience',
-      'High-quality parts and tools used for all repairs',
-      'Real-time updates on repair progress'
+      'Same-day appointments available',
+      'Experienced and certified technicians',
+      'Use of high-quality genuine and OEM parts',
+      'Real-time updates during your repair'
     ],
     buttonText: 'View Process'
   },
   {
     id: 'our-guarantee',
     label: 'OUR GUARANTEE',
-    title: 'Quality Assurance Promise:',
-    content: 'We stand behind our work with comprehensive warranties and satisfaction guarantees that give you peace of mind.',
+    title: 'Quality Assurance & Warranty:',
+    content: 'We stand by our repairs with a 30-day warranty on parts and labor, ensuring your peace of mind.',
     features: [
-      '90-day warranty on all repairs and parts',
-      '100% satisfaction guarantee or your money back',
-      'Free diagnostic and consultation service',
-      'Lifetime support for all completed repairs'
+      '30-day warranty on all repairs and parts',
+      'Satisfaction guaranteed or your money back',
+      'Free diagnostic with repair',
+      'Ongoing customer support post-repair'
     ],
     buttonText: 'Read Warranty'
   },
@@ -53,29 +46,30 @@ const tabsData: TabData[] = [
     id: 'your-privacy',
     label: 'YOUR PRIVACY',
     title: 'Data Protection & Security:',
-    content: 'Your personal information and device data are protected with industry-leading security measures throughout the entire repair process.',
+    content: 'Your data and privacy are protected with industry-leading security standards throughout the repair process.',
     features: [
-      'GDPR compliant data handling procedures',
-      'Encrypted data transfer and storage',
       'No access to personal files during repair',
-      'Secure device pickup and delivery protocols'
+      'Secure device handling and storage',
+      'Encrypted communication and data transfer',
+      'Strict privacy protocols in place'
     ],
     buttonText: 'Privacy Policy'
   },
   {
     id: 'about-us',
     label: 'ABOUT US',
-    title: 'Industry Leaders in Mobile Repair:',
-    content: 'Founded with a mission to revolutionize mobile device repair, we combine cutting-edge technology with personalized service to deliver exceptional results.',
+    title: 'Trusted Mobile Repair Experts:',
+    content: 'With years of experience, iCloud Wireless combines expert technicians and advanced technology to deliver exceptional repair services.',
     features: [
-      'Over 10 years of mobile repair expertise',
-      'Serving thousands of satisfied customers',
-      'Partnerships with major device manufacturers',
-      'Commitment to environmental responsibility through device refurbishment'
+      'Over 10 years of mobile repair experience',
+      'Thousands of happy customers in Dallas and beyond',
+      'Partnerships with top device manufacturers',
+      'Commitment to sustainable repair and device refurbishment'
     ],
     buttonText: 'Our Story'
   }
 ];
+
 
 export default function TabbedSection() {
   const [activeTab, setActiveTab] = useState('how-it-works');

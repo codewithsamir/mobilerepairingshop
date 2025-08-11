@@ -1,6 +1,8 @@
 "use client"
-import { Smartphone, Tablet, Watch, ChevronDown, ChevronLeft } from "lucide-react";
+import { Smartphone,  ChevronDown, ChevronLeft } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
+import { imageData } from "@/lib/imagedata";
 
 
 
@@ -49,7 +51,7 @@ const CategorySelector: React.FC<{ data: CategoryItem[] }> = ({ data }) => {
           >
             <div className="flex items-center space-x-4">
               <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
-                {item.icon || <Smartphone className="w-6 h-6 text-gray-600" />}
+              <Image src={item.image || imageData.iphoneWhite} alt="iPhone" width={24} height={24} className="w-6 h-6" />
               </div>
               <span className="text-gray-900 font-medium">{item.name}</span>
             </div>
@@ -61,17 +63,12 @@ const CategorySelector: React.FC<{ data: CategoryItem[] }> = ({ data }) => {
       {/* Footer */}
       {history.length === 1 && (
         <>
-          <div className="mt-8 p-4 bg-gray-50 rounded-xl">
-            <button className="w-full flex items-center justify-between p-3 text-left">
-              <span className="text-gray-700">More options</span>
-              <ChevronDown className="w-5 h-5 text-gray-400" />
-            </button>
-          </div>
+          
 
           <div className="mt-6 text-xs text-gray-500 leading-relaxed">
-            By submitting your information, you are opting in to receive service related SMS messages from ITECHS.
-            Please note that standard message and data rates may apply. You can unsubscribe at any time by replying 'STOP'.
-          </div>
+  By submitting your information, you agree to receive service-related SMS messages from iCloud Repairing. Standard message and data rates may apply. You can unsubscribe anytime by replying 'STOP'.
+</div>
+
 
 
         
