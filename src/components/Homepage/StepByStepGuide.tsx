@@ -131,9 +131,9 @@ const StepByStepGuide: React.FC = () => {
 
       <div className="grid lg:grid-cols-2 gap-12 items-stretch">
         {/* Left Side */}
-        <div className="flex flex-col items-center justify-center bg-white rounded-xl shadow-lg p-8 min-h-[500px]">
-          <div className="relative w-full flex flex-col items-center">
-            <div className="flex flex-col items-center mb-12">
+        <div className="flex flex-col  bg-white rounded-full shadow-lg drop-shadow-lg  w-[500px] h-[500px]">
+          <div className="relative w-full flex flex-col items-center justify-center">
+            <div className="flex justify-center items-center my-5 ">
               <div className="w-16 h-16 bg-blue-400 rounded-full flex items-center justify-center text-white text-xl font-semibold mb-4">
                 1
               </div>
@@ -148,22 +148,22 @@ const StepByStepGuide: React.FC = () => {
                 instant confirmation.
               </p>
             </div>
-            <div className="absolute -top-8 right-8">
+            <div className="absolute top-[130px] right-20">
               <div className="w-16 h-16 bg-blue-400 rounded-full flex items-center justify-center text-white text-xl font-semibold">
                 2
               </div>
             </div>
-            <div className="absolute bottom-8 right-8">
+            <div className="absolute -bottom-[40px] right-[100px]">
               <div className="w-16 h-16 bg-blue-400 rounded-full flex items-center justify-center text-white text-xl font-semibold">
                 3
               </div>
             </div>
-            <div className="absolute bottom-8 left-8">
+            <div className="absolute -bottom-10 left-[110px]">
               <div className="w-16 h-16 bg-blue-400 rounded-full flex items-center justify-center text-white text-xl font-semibold">
                 4
               </div>
             </div>
-            <div className="absolute -top-8 left-8">
+            <div className="absolute top-[130px] left-[70px]">
               <div className="w-16 h-16 bg-blue-400 rounded-full flex items-center justify-center text-white text-xl font-semibold">
                 5
               </div>

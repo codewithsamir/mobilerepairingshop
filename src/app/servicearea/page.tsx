@@ -8,7 +8,7 @@ const ServiceAreaPage = () => {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row h-screen">
+    <div className="flex flex-col md:flex-row   p-10 m-auto">
       {/* Left Column - Service Details */}
       <div className="w-full md:w-1/2 overflow-y-auto bg-gray-50 p-8">
         <h1 className="text-3xl font-bold mb-4">Our Service Areas</h1>

@@ -1,3 +1,4 @@
+"use client"
 import CategorySelector from '@/components/Homepage/Categorydevice'
 import { Smartphone, Tablet, Watch } from 'lucide-react';
 import React, { useState } from 'react'
@@ -53,7 +54,9 @@ const page = () => {
   },
 ];
   return (
-    <CategorySelector data={devices}/>
+<div className="w-[600px] m-auto p-10">
+        <CategorySelector data={devices}/>
+</div>
   )
 }
 

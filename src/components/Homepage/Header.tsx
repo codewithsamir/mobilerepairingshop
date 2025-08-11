@@ -5,7 +5,7 @@ import React from 'react'
 
 const Header = () => {
       const navItems = [
-  { item: 'HOME', href: 'home' },
+  { item: 'HOME', href: '/' },
   { item: 'BOOK US', href: 'bookus' },
   { item: 'HOW IT WORKS', href: 'how-it-works' },
   { item: 'SERVICE AREAS', href: 'servicearea' }

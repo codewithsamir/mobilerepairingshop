@@ -1,3 +1,4 @@
+"use client"
 import { Smartphone, Tablet, Watch, ChevronDown, ChevronLeft } from "lucide-react";
 import { useState } from "react";
 
