@@ -1,9 +1,16 @@
 import { Smartphone } from 'lucide-react'
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react'
 
 const Header = () => {
-      const navItems = ['HOME', 'BOOK US', 'HOW IT WORKS', 'SERVICE AREAS'];
+      const navItems = [
+  { item: 'HOME', href: 'home' },
+  { item: 'BOOK US', href: 'bookus' },
+  { item: 'HOW IT WORKS', href: 'how-it-works' },
+  { item: 'SERVICE AREAS', href: 'servicearea' }
+];
+
   return (
 
       <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -23,13 +30,13 @@ const Header = () => {
               <div className="bg-blue-900 rounded-full px-8 py-3">
                 <ul className="flex items-center space-x-8">
                   {navItems.map((item) => (
-                    <li key={item}>
-                      <a
-                        href="#"
+                    <li key={item.item}>
+                      <Link
+                        href={item.href}
                         className="text-white text-sm font-medium hover:text-blue-200 transition-colors duration-200"
                       >
-                        {item}
-                      </a>
+                        {item.item}
+                      </Link>
                     </li>
                   ))}
                 </ul>
